@@ -1,0 +1,12 @@
+.header {
+  background-color: var(--color-background-navbar);
+  box-shadow: var(--shadow-navbar);
+}
+
+.header__wrapper {
+  height: 80px;
+}
+
+.app-name {
+  font: var(--typography-appname);
+}
