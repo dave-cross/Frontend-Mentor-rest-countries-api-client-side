@@ -17,7 +17,7 @@ jobs:
       - name: Install Dependancies
         run: npm ci
       - name: Build project
-        run: npm run build
+        run: npm run build -- --base='--base='https://dave-cross.github.io/Frontend-Mentor-rest-countries-api-client-side'
       - name: Upload static files as artifact
         uses: actions/upload-pages-artifact@v3
         with:

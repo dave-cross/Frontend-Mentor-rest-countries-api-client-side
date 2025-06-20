@@ -12,9 +12,9 @@ export default function () {
 }
 
 export const loader = async () => {
-  let data = await fetch(
-    "https://restcountries.com/v3.1/all?fields=name,flags,cca2,cca3,population,region,capital"
-  );
+  let url =
+    "https://restcountries.com/v3.1/all?fields=name,flags,cca2,cca3,population,region,capital";
+  let data = await fetch(url);
   if (!data.ok) {
     throw new Error("Opps!");
   }

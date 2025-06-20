@@ -16,7 +16,8 @@ export default DetailsPage;
 
 export const loader = async ({ params }) => {
   const id = params.id;
-  let data = await fetch(`https://restcountries.com/v3.1/alpha/${id}`);
+  let url = `https://restcountries.com/v3.1/alpha/${id}`;
+  let data = await fetch(url);
   if (!data.ok) {
     throw new Error("Opps!");
   }
